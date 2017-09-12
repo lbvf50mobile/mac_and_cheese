@@ -10,6 +10,6 @@ task :buy_pasta do
   puts 'Buying Pasta'
 end
 
-task :boil_water do
+task :boil_water => [:buy_pasta, :buy_cheese] do
   puts 'Boiling Water'
 end
