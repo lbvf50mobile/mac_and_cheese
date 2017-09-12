@@ -1,4 +1,4 @@
-task :mac_and_cheese => [:boil_water, :buy_pasta, :buy_cheese] do
+task mac_and_cheese: %i[boil_water buy_pasta buy_cheese] do
   puts 'Making Mac & Cheese'
 end
 
